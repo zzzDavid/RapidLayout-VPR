@@ -1,0 +1,314 @@
+Node: 10217  TN_FF_SOURCE Block #600 (bram1_out_17)
+Pin: memory_slice.out[0] pb (bram1_out_17)
+T_arr: 4.243e-11  T_req: -4.31298e-08  Tdel: 1.234e-09
+Internal Net: #1828 (bram1_out_17).  Pins on net: 3.
+
+Node: 10216  TN_FF_OPIN Block #600 (bram1_out_17)
+Pin: memory_slice.out[0] pb (bram1_out_17)
+T_arr: 1.27643e-09  T_req: -4.18958e-08  Tdel: 0
+Internal Net: #1828 (bram1_out_17).  Pins on net: 3.
+
+Node: 10208  TN_INTERMEDIATE_NODE Block #600 (bram1_out_17)
+Pin: mem_2048x8_sp.out[7] pb (bram1_out_17)
+T_arr: 1.27643e-09  T_req: -4.18958e-08  Tdel: 4e-11
+Internal Net: #1828 (bram1_out_17).  Pins on net: 3.
+
+Node: 10203  TN_CB_OPIN Block #600 (bram1_out_17)
+Pin: block_ram.out[7] pb (bram1_out_17)
+T_arr: 1.31643e-09  T_req: -4.18558e-08  Tdel: 6.13479e-10
+External-to-Block Net: #1804 (bram1_out_17).  Pins on net: 3.
+
+Node: 12222  TN_CB_IPIN Block #710 (dsp1_out_17)
+Pin: dsp.c[0] pb (dsp1_out_17)
+T_arr: 1.92991e-09  T_req: -4.12423e-08  Tdel: 1.34e-10
+Internal Net: #1828 (bram1_out_17).  Pins on net: 3.
+
+Node: 12228  TN_INTERMEDIATE_NODE Block #710 (dsp1_out_17)
+Pin: dsp48e2_slice.C_cfg[0] pb (dsp1_out_17)
+T_arr: 2.06391e-09  T_req: -4.11083e-08  Tdel: 0
+Internal Net: #1828 (bram1_out_17).  Pins on net: 3.
+
+Node: 12234  TN_PRIMITIVE_IPIN Block #710 (dsp1_out_17)
+Pin: dsp48e2.c[0] pb (dsp1_out_17)
+T_arr: 2.06391e-09  T_req: -4.11083e-08  Tdel: 1.523e-09
+Internal Net: #1828 (bram1_out_17).  Pins on net: 3.
+
+Node: 12235  TN_PRIMITIVE_OPIN Block #710 (dsp1_out_17)
+Pin: dsp48e2.out[0] pb (dsp1_out_17)
+T_arr: 3.58691e-09  T_req: -3.95853e-08  Tdel: 0
+Internal Net: #1836 (dsp1_out_17).  Pins on net: 2.
+
+Node: 12229  TN_INTERMEDIATE_NODE Block #710 (dsp1_out_17)
+Pin: dsp48e2_slice.OUT_cfg[0] pb (dsp1_out_17)
+T_arr: 3.58691e-09  T_req: -3.95853e-08  Tdel: 1.93e-09
+Internal Net: #1836 (dsp1_out_17).  Pins on net: 2.
+
+Node: 12223  TN_CB_OPIN Block #710 (dsp1_out_17)
+Pin: dsp.out[0] pb (dsp1_out_17)
+T_arr: 5.51691e-09  T_req: -3.76553e-08  Tdel: 6.13479e-10
+External-to-Block Net: #2203 (dsp1_out_17).  Pins on net: 2.
+
+Node: 14214  TN_CB_IPIN Block #834 (dsp2_out_17)
+Pin: dsp.c[0] pb (dsp2_out_17)
+T_arr: 6.13039e-09  T_req: -3.70419e-08  Tdel: 1.34e-10
+Internal Net: #1836 (dsp1_out_17).  Pins on net: 2.
+
+Node: 14220  TN_INTERMEDIATE_NODE Block #834 (dsp2_out_17)
+Pin: dsp48e2_slice.C_cfg[0] pb (dsp2_out_17)
+T_arr: 6.26439e-09  T_req: -3.69079e-08  Tdel: 0
+Internal Net: #1836 (dsp1_out_17).  Pins on net: 2.
+
+Node: 14226  TN_PRIMITIVE_IPIN Block #834 (dsp2_out_17)
+Pin: dsp48e2.c[0] pb (dsp2_out_17)
+T_arr: 6.26439e-09  T_req: -3.69079e-08  Tdel: 1.523e-09
+Internal Net: #1836 (dsp1_out_17).  Pins on net: 2.
+
+Node: 14227  TN_PRIMITIVE_OPIN Block #834 (dsp2_out_17)
+Pin: dsp48e2.out[0] pb (dsp2_out_17)
+T_arr: 7.78739e-09  T_req: -3.53849e-08  Tdel: 0
+Internal Net: #1839 (dsp2_out_17).  Pins on net: 2.
+
+Node: 14221  TN_INTERMEDIATE_NODE Block #834 (dsp2_out_17)
+Pin: dsp48e2_slice.OUT_cfg[0] pb (dsp2_out_17)
+T_arr: 7.78739e-09  T_req: -3.53849e-08  Tdel: 1.93e-09
+Internal Net: #1839 (dsp2_out_17).  Pins on net: 2.
+
+Node: 14215  TN_CB_OPIN Block #834 (dsp2_out_17)
+Pin: dsp.out[0] pb (dsp2_out_17)
+T_arr: 9.71739e-09  T_req: -3.34549e-08  Tdel: 6.13478e-10
+External-to-Block Net: #2355 (dsp2_out_17).  Pins on net: 2.
+
+Node: 12957  TN_CB_IPIN Block #757 (dsp3_out_17)
+Pin: dsp.c[0] pb (dsp3_out_17)
+T_arr: 1.03309e-08  T_req: -3.28414e-08  Tdel: 1.34e-10
+Internal Net: #1839 (dsp2_out_17).  Pins on net: 2.
+
+Node: 12962  TN_INTERMEDIATE_NODE Block #757 (dsp3_out_17)
+Pin: dsp48e2_slice.C_cfg[0] pb (dsp3_out_17)
+T_arr: 1.04649e-08  T_req: -3.27074e-08  Tdel: 0
+Internal Net: #1839 (dsp2_out_17).  Pins on net: 2.
+
+Node: 12967  TN_PRIMITIVE_IPIN Block #757 (dsp3_out_17)
+Pin: dsp48e2.c[0] pb (dsp3_out_17)
+T_arr: 1.04649e-08  T_req: -3.27074e-08  Tdel: 1.523e-09
+Internal Net: #1839 (dsp2_out_17).  Pins on net: 2.
+
+Node: 12968  TN_PRIMITIVE_OPIN Block #757 (dsp3_out_17)
+Pin: dsp48e2.out[0] pb (dsp3_out_17)
+T_arr: 1.19879e-08  T_req: -3.11844e-08  Tdel: 0
+Internal Net: #1842 (dsp3_out_17).  Pins on net: 2.
+
+Node: 12963  TN_INTERMEDIATE_NODE Block #757 (dsp3_out_17)
+Pin: dsp48e2_slice.OUT_cfg[0] pb (dsp3_out_17)
+T_arr: 1.19879e-08  T_req: -3.11844e-08  Tdel: 1.93e-09
+Internal Net: #1842 (dsp3_out_17).  Pins on net: 2.
+
+Node: 12958  TN_CB_OPIN Block #757 (dsp3_out_17)
+Pin: dsp.out[0] pb (dsp3_out_17)
+T_arr: 1.39179e-08  T_req: -2.92544e-08  Tdel: 6.13478e-10
+External-to-Block Net: #1546 (dsp3_out_17).  Pins on net: 2.
+
+Node: 8614  TN_CB_IPIN Block #514 (dsp4_out_17)
+Pin: dsp.c[0] pb (dsp4_out_17)
+T_arr: 1.45313e-08  T_req: -2.86409e-08  Tdel: 1.34e-10
+Internal Net: #1842 (dsp3_out_17).  Pins on net: 2.
+
+Node: 8620  TN_INTERMEDIATE_NODE Block #514 (dsp4_out_17)
+Pin: dsp48e2_slice.C_cfg[0] pb (dsp4_out_17)
+T_arr: 1.46653e-08  T_req: -2.85069e-08  Tdel: 0
+Internal Net: #1842 (dsp3_out_17).  Pins on net: 2.
+
+Node: 8626  TN_PRIMITIVE_IPIN Block #514 (dsp4_out_17)
+Pin: dsp48e2.c[0] pb (dsp4_out_17)
+T_arr: 1.46653e-08  T_req: -2.85069e-08  Tdel: 1.523e-09
+Internal Net: #1842 (dsp3_out_17).  Pins on net: 2.
+
+Node: 8627  TN_PRIMITIVE_OPIN Block #514 (dsp4_out_17)
+Pin: dsp48e2.out[0] pb (dsp4_out_17)
+T_arr: 1.61883e-08  T_req: -2.69839e-08  Tdel: 0
+Internal Net: #1844 (dsp4_out_17).  Pins on net: 2.
+
+Node: 8621  TN_INTERMEDIATE_NODE Block #514 (dsp4_out_17)
+Pin: dsp48e2_slice.OUT_cfg[0] pb (dsp4_out_17)
+T_arr: 1.61883e-08  T_req: -2.69839e-08  Tdel: 1.93e-09
+Internal Net: #1844 (dsp4_out_17).  Pins on net: 2.
+
+Node: 8615  TN_CB_OPIN Block #514 (dsp4_out_17)
+Pin: dsp.out[0] pb (dsp4_out_17)
+T_arr: 1.81183e-08  T_req: -2.50539e-08  Tdel: 7.47901e-10
+External-to-Block Net: #1315 (dsp4_out_17).  Pins on net: 2.
+
+Node: 7228  TN_CB_IPIN Block #437 (dsp5_out_17)
+Pin: dsp.c[0] pb (dsp5_out_17)
+T_arr: 1.88662e-08  T_req: -2.4306e-08  Tdel: 1.33999e-10
+Internal Net: #1844 (dsp4_out_17).  Pins on net: 2.
+
+Node: 7234  TN_INTERMEDIATE_NODE Block #437 (dsp5_out_17)
+Pin: dsp48e2_slice.C_cfg[0] pb (dsp5_out_17)
+T_arr: 1.90002e-08  T_req: -2.4172e-08  Tdel: 0
+Internal Net: #1844 (dsp4_out_17).  Pins on net: 2.
+
+Node: 7240  TN_PRIMITIVE_IPIN Block #437 (dsp5_out_17)
+Pin: dsp48e2.c[0] pb (dsp5_out_17)
+T_arr: 1.90002e-08  T_req: -2.4172e-08  Tdel: 1.523e-09
+Internal Net: #1844 (dsp4_out_17).  Pins on net: 2.
+
+Node: 7241  TN_PRIMITIVE_OPIN Block #437 (dsp5_out_17)
+Pin: dsp48e2.out[0] pb (dsp5_out_17)
+T_arr: 2.05232e-08  T_req: -2.2649e-08  Tdel: 0
+Internal Net: #1847 (dsp5_out_17).  Pins on net: 2.
+
+Node: 7235  TN_INTERMEDIATE_NODE Block #437 (dsp5_out_17)
+Pin: dsp48e2_slice.OUT_cfg[0] pb (dsp5_out_17)
+T_arr: 2.05232e-08  T_req: -2.2649e-08  Tdel: 1.93e-09
+Internal Net: #1847 (dsp5_out_17).  Pins on net: 2.
+
+Node: 7229  TN_CB_OPIN Block #437 (dsp5_out_17)
+Pin: dsp.out[0] pb (dsp5_out_17)
+T_arr: 2.24532e-08  T_req: -2.0719e-08  Tdel: 7.47901e-10
+External-to-Block Net: #1042 (dsp5_out_17).  Pins on net: 2.
+
+Node: 5752  TN_CB_IPIN Block #346 (dsp6_out_17)
+Pin: dsp.c[0] pb (dsp6_out_17)
+T_arr: 2.32011e-08  T_req: -1.99711e-08  Tdel: 1.33999e-10
+Internal Net: #1847 (dsp5_out_17).  Pins on net: 2.
+
+Node: 5757  TN_INTERMEDIATE_NODE Block #346 (dsp6_out_17)
+Pin: dsp48e2_slice.C_cfg[0] pb (dsp6_out_17)
+T_arr: 2.33351e-08  T_req: -1.98371e-08  Tdel: 0
+Internal Net: #1847 (dsp5_out_17).  Pins on net: 2.
+
+Node: 5762  TN_PRIMITIVE_IPIN Block #346 (dsp6_out_17)
+Pin: dsp48e2.c[0] pb (dsp6_out_17)
+T_arr: 2.33351e-08  T_req: -1.98371e-08  Tdel: 1.523e-09
+Internal Net: #1847 (dsp5_out_17).  Pins on net: 2.
+
+Node: 5763  TN_PRIMITIVE_OPIN Block #346 (dsp6_out_17)
+Pin: dsp48e2.out[0] pb (dsp6_out_17)
+T_arr: 2.48581e-08  T_req: -1.83141e-08  Tdel: 0
+Internal Net: #1850 (dsp6_out_17).  Pins on net: 2.
+
+Node: 5758  TN_INTERMEDIATE_NODE Block #346 (dsp6_out_17)
+Pin: dsp48e2_slice.OUT_cfg[0] pb (dsp6_out_17)
+T_arr: 2.48581e-08  T_req: -1.83141e-08  Tdel: 1.93e-09
+Internal Net: #1850 (dsp6_out_17).  Pins on net: 2.
+
+Node: 5753  TN_CB_OPIN Block #346 (dsp6_out_17)
+Pin: dsp.out[0] pb (dsp6_out_17)
+T_arr: 2.67881e-08  T_req: -1.63841e-08  Tdel: 1.96545e-09
+External-to-Block Net: #829 (dsp6_out_17).  Pins on net: 2.
+
+Node: 4552  TN_CB_IPIN Block #275 (dsp7_out_17)
+Pin: dsp.c[0] pb (dsp7_out_17)
+T_arr: 2.87536e-08  T_req: -1.44187e-08  Tdel: 1.33999e-10
+Internal Net: #1850 (dsp6_out_17).  Pins on net: 2.
+
+Node: 4558  TN_INTERMEDIATE_NODE Block #275 (dsp7_out_17)
+Pin: dsp48e2_slice.C_cfg[0] pb (dsp7_out_17)
+T_arr: 2.88876e-08  T_req: -1.42847e-08  Tdel: 0
+Internal Net: #1850 (dsp6_out_17).  Pins on net: 2.
+
+Node: 4564  TN_PRIMITIVE_IPIN Block #275 (dsp7_out_17)
+Pin: dsp48e2.c[0] pb (dsp7_out_17)
+T_arr: 2.88876e-08  T_req: -1.42847e-08  Tdel: 1.523e-09
+Internal Net: #1850 (dsp6_out_17).  Pins on net: 2.
+
+Node: 4565  TN_PRIMITIVE_OPIN Block #275 (dsp7_out_17)
+Pin: dsp48e2.out[0] pb (dsp7_out_17)
+T_arr: 3.04106e-08  T_req: -1.27617e-08  Tdel: 0
+Internal Net: #1852 (dsp7_out_17).  Pins on net: 2.
+
+Node: 4559  TN_INTERMEDIATE_NODE Block #275 (dsp7_out_17)
+Pin: dsp48e2_slice.OUT_cfg[0] pb (dsp7_out_17)
+T_arr: 3.04106e-08  T_req: -1.27617e-08  Tdel: 1.93e-09
+Internal Net: #1852 (dsp7_out_17).  Pins on net: 2.
+
+Node: 4553  TN_CB_OPIN Block #275 (dsp7_out_17)
+Pin: dsp.out[0] pb (dsp7_out_17)
+T_arr: 3.23406e-08  T_req: -1.08317e-08  Tdel: 6.13479e-10
+External-to-Block Net: #697 (dsp7_out_17).  Pins on net: 2.
+
+Node: 3760  TN_CB_IPIN Block #231 (dsp8_out_17)
+Pin: dsp.c[0] pb (dsp8_out_17)
+T_arr: 3.29541e-08  T_req: -1.02182e-08  Tdel: 1.34001e-10
+Internal Net: #1852 (dsp7_out_17).  Pins on net: 2.
+
+Node: 3766  TN_INTERMEDIATE_NODE Block #231 (dsp8_out_17)
+Pin: dsp48e2_slice.C_cfg[0] pb (dsp8_out_17)
+T_arr: 3.30881e-08  T_req: -1.00842e-08  Tdel: 0
+Internal Net: #1852 (dsp7_out_17).  Pins on net: 2.
+
+Node: 3772  TN_PRIMITIVE_IPIN Block #231 (dsp8_out_17)
+Pin: dsp48e2.c[0] pb (dsp8_out_17)
+T_arr: 3.30881e-08  T_req: -1.00842e-08  Tdel: 1.523e-09
+Internal Net: #1852 (dsp7_out_17).  Pins on net: 2.
+
+Node: 3773  TN_PRIMITIVE_OPIN Block #231 (dsp8_out_17)
+Pin: dsp48e2.out[0] pb (dsp8_out_17)
+T_arr: 3.46111e-08  T_req: -8.56118e-09  Tdel: 0
+Internal Net: #1855 (dsp8_out_17).  Pins on net: 2.
+
+Node: 3767  TN_INTERMEDIATE_NODE Block #231 (dsp8_out_17)
+Pin: dsp48e2_slice.OUT_cfg[0] pb (dsp8_out_17)
+T_arr: 3.46111e-08  T_req: -8.56118e-09  Tdel: 1.93e-09
+Internal Net: #1855 (dsp8_out_17).  Pins on net: 2.
+
+Node: 3761  TN_CB_OPIN Block #231 (dsp8_out_17)
+Pin: dsp.out[0] pb (dsp8_out_17)
+T_arr: 3.65411e-08  T_req: -6.63118e-09  Tdel: 8.82324e-10
+External-to-Block Net: #454 (dsp8_out_17).  Pins on net: 2.
+
+Node: 2362  TN_CB_IPIN Block #150 (dsp9_out_17)
+Pin: dsp.c[0] pb (dsp9_out_17)
+T_arr: 3.74234e-08  T_req: -5.74886e-09  Tdel: 1.34001e-10
+Internal Net: #1855 (dsp8_out_17).  Pins on net: 2.
+
+Node: 2366  TN_INTERMEDIATE_NODE Block #150 (dsp9_out_17)
+Pin: dsp48e2_slice.C_cfg[0] pb (dsp9_out_17)
+T_arr: 3.75574e-08  T_req: -5.61486e-09  Tdel: 0
+Internal Net: #1855 (dsp8_out_17).  Pins on net: 2.
+
+Node: 2370  TN_PRIMITIVE_IPIN Block #150 (dsp9_out_17)
+Pin: dsp48e2.c[0] pb (dsp9_out_17)
+T_arr: 3.75574e-08  T_req: -5.61486e-09  Tdel: 1.523e-09
+Internal Net: #1855 (dsp8_out_17).  Pins on net: 2.
+
+Node: 2371  TN_PRIMITIVE_OPIN Block #150 (dsp9_out_17)
+Pin: dsp48e2.out[0] pb (dsp9_out_17)
+T_arr: 3.90804e-08  T_req: -4.09186e-09  Tdel: 0
+Internal Net: #1827 (dsp9_out_17).  Pins on net: 2.
+
+Node: 2367  TN_INTERMEDIATE_NODE Block #150 (dsp9_out_17)
+Pin: dsp48e2_slice.OUT_cfg[0] pb (dsp9_out_17)
+T_arr: 3.90804e-08  T_req: -4.09186e-09  Tdel: 1.93e-09
+Internal Net: #1827 (dsp9_out_17).  Pins on net: 2.
+
+Node: 2363  TN_CB_OPIN Block #150 (dsp9_out_17)
+Pin: dsp.out[0] pb (dsp9_out_17)
+T_arr: 4.10104e-08  T_req: -2.16186e-09  Tdel: 1.56329e-09
+External-to-Block Net: #234 (dsp9_out_17).  Pins on net: 2.
+
+Node: 1464  TN_CB_IPIN Block #77 (uram2_out_17)
+Pin: ultra_ram.data[15] pb (uram2_out_17)
+T_arr: 4.25737e-08  T_req: -5.9857e-10  Tdel: 1.32001e-10
+Internal Net: #1827 (dsp9_out_17).  Pins on net: 2.
+
+Node: 1469  TN_INTERMEDIATE_NODE Block #77 (uram2_out_17)
+Pin: mem_2048x16_sp.data[15] pb (uram2_out_17)
+T_arr: 4.27057e-08  T_req: -4.6657e-10  Tdel: 0
+Internal Net: #1827 (dsp9_out_17).  Pins on net: 2.
+
+Node: 1475  TN_FF_IPIN Block #77 (uram2_out_17)
+Pin: memory_slice.data[0] pb (uram2_out_17)
+T_arr: 4.27057e-08  T_req: -4.6657e-10  Tdel: 5.09001e-10
+Internal Net: #1827 (dsp9_out_17).  Pins on net: 2.
+
+Node: 1476  TN_FF_SINK Block #77 (uram2_out_17)
+Pin: memory_slice.data[0] pb (uram2_out_17)
+T_arr: 4.32147e-08  T_req: 4.243e-11  
+Internal Net: #1827 (dsp9_out_17).  Pins on net: 2.
+
+
+Tnodes on critical path: 62  Non-global nets on critical path: 10.
+Global nets on critical path: 0.
+Total logic delay: 3.4198e-08 (s)  Total net delay: 8.97425e-09 (s)

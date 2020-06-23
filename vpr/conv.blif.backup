@@ -1,0 +1,88 @@
+.model conv_unit
+.inputs clk we bram_addr_1 bram_addr_2 bram_addr_3 bram_addr_4 uram_addr_1 uram_addr_2 udata
+.outputs uram2_out
+
+# block 1 group 1 dsp 1
+.subckt dsp x=bram2_out w=bram1_out c=bram1_out out=dsp1_out outx=dsp1_outx outw=dsp1_outw
+# block 1 group 1 dsp 2
+.subckt dsp x=dsp1_outx w=dsp1_outw c=dsp1_out out=dsp2_out outx=dsp2_outx outw=dsp2_outw
+# block 1 group 1 dsp 3
+.subckt dsp x=dsp2_outx w=dsp2_outw c=dsp2_out out=dsp3_out outx=dsp3_outx outw=dsp3_outw 
+# block 1 group 2 dsp 1
+.subckt dsp x=bram3_out w=dsp3_outw c=dsp3_out out=dsp4_out outx=dsp4_outx outw=dsp4_outw
+# block 1 group 2 dsp 2
+.subckt dsp x=dsp4_outx w=dsp4_outw c=dsp4_out out=dsp5_out outx=dsp5_outx outw=dsp5_outw
+# block 1 group 2 dsp 3
+.subckt dsp x=dsp5_outx w=dsp5_outw c=dsp5_out out=dsp6_out outx=dsp6_outx outw=dsp6_outw
+# block 1 group 3 dsp 1
+.subckt dsp x=bram4_out w=dsp6_outw c=dsp6_out out=dsp7_out outx=dsp7_outx outw=dsp7_outw 
+# block 1 group 3 dsp 2
+.subckt dsp x=dsp7_outx w=dsp7_outw c=dsp7_out out=dsp8_out outx=dsp8_outx outw=dsp8_outw 
+# block 1 group 3 dsp 3
+.subckt dsp x=dsp8_outx w=dsp8_outw c=dsp8_out out=dsp9_out outx=dsp9_outx outw=dsp9_outw 
+#----------- 
+# block 2 group 1 dsp 1
+.subckt dsp x=bram6_out w=bram5_out c=bram5_out out=dsp10_out outx=dsp10_outx outw=dsp10_outw 
+# block 1 group 1 dsp 2
+.subckt dsp x=dsp10_outx w=dsp10_outw c=dsp10_out out=dsp11_out outx=dsp11_outx outw=dsp11_outw 
+# block 1 group 1 dsp 3
+.subckt dsp x=dsp11_outx w=dsp11_outw c=dsp11_out out=dsp12_out outx=dsp12_outx outw=dsp12_outw 
+# block 1 group 2 dsp 1
+.subckt dsp x=bram7_out w=dsp12_outw c=dsp12_out out=dsp13_out outx=dsp13_outx outw=dsp13_outw 
+# block 1 group 2 dsp 2
+.subckt dsp x=dsp13_outx w=dsp13_outw c=dsp13_out out=dsp14_out outx=dsp14_outx outw=dsp14_outw 
+# block 1 group 2 dsp 3
+.subckt dsp x=dsp14_outx w=dsp14_outw c=dsp14_out out=dsp15_out outx=dsp15_outx outw=dsp15_outw 
+# block 1 group 3 dsp 1
+.subckt dsp x=bram8_out w=dsp15_outw c=dsp15_out out=dsp16_out outx=dsp16_outx outw=dsp16_outw 
+# block 1 group 3 dsp 2
+.subckt dsp x=dsp16_outx w=dsp16_outw c=dsp16_out out=dsp17_out outx=dsp17_outx outw=dsp17_outw 
+# block 1 group 3 dsp 3
+.subckt dsp x=dsp17_outx w=dsp17_outw c=dsp17_out out=dsp18_out outx=dsp18_outx outw=dsp18_outw 
+ #----
+# BRAM Instantiation
+# group 1 number 1
+.subckt block_ram clock=clk we=we data=bram1_in addr=bram_addr_1 out=bram1_out 
+# group 1 number 2
+.subckt block_ram clock=clk we=we data=bram1_in addr=bram_addr_2 out=bram2_out 
+# group 1 number 3
+.subckt block_ram clock=clk we=we data=bram2_out addr=bram_addr_3 out=bram3_out
+# group 1 number 4
+.subckt block_ram clock=clk we=we data=bram3_out addr=bram_addr_4 out=bram4_out
+# group 2 number 1
+.subckt block_ram clock=clk we=we data=bram1_in addr=bram_addr_1 out=bram5_out 
+# group 2 number 2
+.subckt block_ram clock=clk we=we data=bram1_in addr=bram_addr_2 out=bram6_out 
+# group 2 number 3
+.subckt block_ram clock=clk we=we data=bram6_out addr=bram_addr_3 out=bram7_out 
+# group 2 number 4
+.subckt block_ram clock=clk we=we data=bram7_out addr=bram_addr_4 out=bram8_out 
+# Ultra RAMs
+.subckt ultra_ram clock=clk we=we data=udata addr=uram_addr_1 out=bram1_in
+.subckt ultra_ram clock=clk we=we data=dsp9_out addr=uram_addr_2 out=uram2_out
+
+
+
+.end
+
+
+.model dsp
+.inputs x w c
+.outputs out outx outw
+.blackbox
+.end
+
+# 2048 x 8bit
+.model block_ram
+.inputs clock we data addr
+.outputs out
+.blackbox
+.end
+
+# 2048 x 16bit
+.model ultra_ram
+.inputs clock we data addr
+.outputs out
+
+.blackbox
+.end
